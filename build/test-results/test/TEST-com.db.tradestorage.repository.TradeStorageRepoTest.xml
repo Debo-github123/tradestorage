@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.db.tradestorage.repository.TradeStorageRepoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-09T20:49:38" hostname="debo-mac" time="0.165">
+  <properties/>
+  <testcase name="findByByTradeId()" classname="com.db.tradestorage.repository.TradeStorageRepoTest" time="0.165"/>
+  <system-out><![CDATA[02:19:34.145 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+02:19:34.157 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+02:19:34.173 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.db.tradestorage.repository.TradeStorageRepoTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+02:19:34.183 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.db.tradestorage.repository.TradeStorageRepoTest], using SpringBootContextLoader
+02:19:34.185 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.db.tradestorage.repository.TradeStorageRepoTest]: class path resource [com/db/tradestorage/repository/TradeStorageRepoTest-context.xml] does not exist
+02:19:34.186 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.db.tradestorage.repository.TradeStorageRepoTest]: class path resource [com/db/tradestorage/repository/TradeStorageRepoTestContext.groovy] does not exist
+02:19:34.186 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.db.tradestorage.repository.TradeStorageRepoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+02:19:34.187 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.db.tradestorage.repository.TradeStorageRepoTest]: TradeStorageRepoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+02:19:34.216 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.db.tradestorage.repository.TradeStorageRepoTest]
+02:19:34.266 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/debopriyanath/Downloads/tradeporcessor/build/classes/java/main/com/db/tradestorage/TradeStorageApplication.class]
+02:19:34.267 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.db.tradestorage.TradeStorageApplication for test class com.db.tradestorage.repository.TradeStorageRepoTest
+02:19:34.348 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.db.tradestorage.repository.TradeStorageRepoTest]: using defaults.
+02:19:34.348 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+02:19:34.360 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6545142c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6a924b72, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1c053e6d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1c67fc26, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51ce6ff2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@29ff7762, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1cbcc266, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3f198b1b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d8ac2f5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4f9ce241, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@35c9b626, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@467bb2d7]
+02:19:34.363 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@14f682e0 testClass = TradeStorageRepoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@56326686 testClass = TradeStorageRepoTest, locations = '{}', classes = '{class com.db.tradestorage.TradeStorageApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6870c659, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@777596f3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1a86ea3d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@c17f4b0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+02:19:34.389 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v2.1.13.RELEASE)
+
+2022-07-10 02:19:34.630  INFO 15619 --- [    Test worker] c.d.t.repository.TradeStorageRepoTest    : Starting TradeStorageRepoTest on debo-mac with PID 15619 (started by debopriyanath in /Users/debopriyanath/Downloads/tradeporcessor)
+2022-07-10 02:19:34.631  INFO 15619 --- [    Test worker] c.d.t.repository.TradeStorageRepoTest    : No active profile set, falling back to default profiles: default
+2022-07-10 02:19:35.265  INFO 15619 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 02:19:35.350  INFO 15619 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74ms. Found 2 JPA repository interfaces.
+2022-07-10 02:19:36.005  INFO 15619 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 02:19:36.164  INFO 15619 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 02:19:36.242  INFO 15619 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-07-10 02:19:36.302  INFO 15619 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.15.Final}
+2022-07-10 02:19:36.303  INFO 15619 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2022-07-10 02:19:36.454  INFO 15619 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-07-10 02:19:36.586  INFO 15619 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-07-10 02:19:37.256  INFO 15619 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 02:19:37.991  INFO 15619 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-10 02:19:38.041  WARN 15619 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 02:19:38.283  INFO 15619 --- [    Test worker] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-07-10 02:19:38.337  INFO 15619 --- [    Test worker] c.d.t.repository.TradeStorageRepoTest    : Started TradeStorageRepoTest in 3.94 seconds (JVM running for 5.096)
+2022-07-10 02:19:38.384  INFO 15619 --- [   scheduling-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2022-07-10 02:19:38.480 ERROR 15619 --- [   scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NullPointerException: null
+	at com.db.tradestorage.service.impl.TradeStorageServiceImpl.lambda$updateExpiryFlag$0(TradeStorageServiceImpl.java:89) ~[main/:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[na:na]
+	at com.db.tradestorage.service.impl.TradeStorageServiceImpl.updateExpiryFlag(TradeStorageServiceImpl.java:88) ~[main/:na]
+	at com.db.tradestorage.scheduler.TradeStorageScheduler.updateExpiryFlagOfTrade(TradeStorageScheduler.java:16) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-07-10 02:19:38.483 ERROR 15619 --- [   scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NullPointerException: null
+	at com.db.tradestorage.service.impl.TradeStorageServiceImpl.lambda$updateExpiryFlag$0(TradeStorageServiceImpl.java:89) ~[main/:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[na:na]
+	at com.db.tradestorage.service.impl.TradeStorageServiceImpl.updateExpiryFlag(TradeStorageServiceImpl.java:88) ~[main/:na]
+	at com.db.tradestorage.scheduler.TradeStorageScheduler.updateExpiryFlagOfTrade(TradeStorageScheduler.java:16) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-07-10 02:19:38.486 ERROR 15619 --- [   scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NullPointerException: null
+	at com.db.tradestorage.service.impl.TradeStorageServiceImpl.lambda$updateExpiryFlag$0(TradeStorageServiceImpl.java:89) ~[main/:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[na:na]
+	at com.db.tradestorage.service.impl.TradeStorageServiceImpl.updateExpiryFlag(TradeStorageServiceImpl.java:88) ~[main/:na]
+	at com.db.tradestorage.scheduler.TradeStorageScheduler.updateExpiryFlagOfTrade(TradeStorageScheduler.java:16) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
